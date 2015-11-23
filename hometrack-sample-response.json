@@ -1,0 +1,18 @@
+{
+    "response": [
+        {
+            "concataddress": "28 Donington Ave Georges Hall NSW 2198",
+            "lat": -33.912542000000002,
+            "lon": 151.00293199999999,
+            "type": "htv",
+            "workflow": "completed"
+        },
+        {
+            "concataddress": "25 Mary St Brisbane QLD 4000",
+            "type": "htv",
+            "lat": -33.912542000000002,
+            "lon": 151.00293199999999,
+            "workflow": "completed"
+        }
+    ]
+}

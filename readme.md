@@ -1,7 +1,7 @@
 Propeller Web Developer Test
 ==========================
 
-To complete this test, you will need to write and deploy a small NodeJs API web service, and provide us the URL to your solution. Note: as this is also an exercise in set-up and deployment, please don't solve this by adding an endpoint to an existing app or service. Your service should be standalone and deployed at a root path e.g. with Heroku on http://myservice.herokuapp.com/.
+To complete this test, you will need to write and deploy a small API web service, and provide us the URL to your solution. Note: as this is also an exercise in set-up and deployment, please don't solve this by adding an endpoint to an existing app or service. Your service should be standalone and deployed at a root path e.g. with Heroku on http://myservice.herokuapp.com/.
 
 You can take as long as you need to submit your solution, but you should be able to finish it in 4 hours.
 

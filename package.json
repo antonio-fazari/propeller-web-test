@@ -1,0 +1,25 @@
+{
+  "name": "propeller-test",
+  "version": "1.0.0",
+  "description": "Technical test for Propeller",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Propeller",
+    "technical",
+    "test"
+  ],
+  "author": "Antonio Fazari",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "debug": "^2.2.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  }
+}

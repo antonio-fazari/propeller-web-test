@@ -24,17 +24,20 @@ app.use('/', router);
 
 // Catch 404s and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  const err = new Error('Page Not Found');
   err.status = 404;
+
   next(err);
 });
 
 // Error handler for bad request, JSON parsing failed.
 app.use(function(err, req, res, next) {
+  if (err.status === 400) {
+    err.message = 'Could not decode request: JSON parsing failed';
+  }
   res.status(err.status || 500);
   res.json({
-    'error': 'Could not decode request: JSON parsing failed',
-    'message': err.message
+    'error': err.message,
   });
 });
 

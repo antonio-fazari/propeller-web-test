@@ -21,6 +21,8 @@ router.post('/', function(req, res) {
   parser.filterBy('type', 'htv');
   parser.filterBy('workflow', 'completed');
 
+  // Reduce fields.
+
   // Return filterd data.
   res.json({
     response: parser.getData(),

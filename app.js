@@ -1,3 +1,9 @@
+/**
+ * @file - Application server.
+ * @author - Antonio Fazari
+ *
+ * Handles bootstrapping the application.
+ */
 'use strict';
 
 const express = require('express');

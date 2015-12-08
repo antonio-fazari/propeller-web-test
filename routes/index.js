@@ -1,3 +1,9 @@
+/**
+ * @file - Router for index service.
+ * @author - Antonio Fazari
+ *
+ * Handle requests for index service.
+ */
 'use strict';
 
 const express = require('express');
@@ -16,16 +22,18 @@ router.get('/', function(req, res) {
 // Handles post request to filter data.
 router.post('/', function(req, res) {
   const parser = new Parser(req.body.payload);
+  let response = [];
 
   // Filter body by type and workflow.
   parser.filterBy('type', 'htv');
   parser.filterBy('workflow', 'completed');
 
-  // Reduce fields.
+  // Prepare response.
+  response = parser.prepareData();
 
   // Return filterd data.
   res.json({
-    response: parser.getData(),
+    response: response,
   });
 });
 
